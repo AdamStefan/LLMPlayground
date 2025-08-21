@@ -7,7 +7,7 @@ echo "ML directory: $ML_PATH"
 BASE_PATH="/data/stefan"
 echo "Base path (datasets, experiments): $BASE_PATH"
 
-export PYTHONPATH="$ML_PATH:$ML_PATH/autopilot:$ML_PATH/computer_vision/release/uipath_cv_client"
+export PYTHONPATH="$ML_PATH"
 
 echo "Setting up cache directories in $BASE_PATH/.cache"
 export HF_HOME=${BASE_PATH}/.cache/huggingface_cache
