@@ -1,0 +1,59 @@
+[project]
+name = "training"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.11.*"
+dependencies = [
+    "accelerate>=1.8.1",
+    "anthropic>=0.57.1",
+    "azure-monitor-events-extension==0.1.0",
+    "azure-monitor-opentelemetry==1.6.4",
+    "bitsandbytes>=0.46.0",
+    "datasets[audio]>=3.6.0",
+    "decord>=0.6.0",
+    "deepspeed==0.16.4",
+    "encord>=0.1.171",
+    "ffmpeg>=1.4",
+    "flask>=3.1.1",
+    "gradio>=5.38.1",
+    "json-minify>=0.3.0",
+    "json-repair>=0.47.4",
+    "jupyter>=1.1.1",
+    "jwt>=1.4.0",
+    "langchain>=0.3.26",
+    "langchain-aws>=0.2.27",
+    "langchain-google-vertexai>=2.0.27",
+    "langchain-openai>=0.3.27",
+    "liger-kernel>=0.6.1",
+    "math-verify>=0.8.0",
+    "matplotlib>=3.10.3",
+    "notebook>=7.4.4",
+    "openai>=1.92.2",
+    "opencv-python>=4.11.0.86",
+    "opentelemetry-instrumentation-httpx==0.50b0",
+    "peft>=0.15.2",
+    "pillow>=11.2.1",
+    "pybase64>=1.4.1",
+    "pydantic>=2.11.7",
+    "pydantic-settings>=2.10.1",
+    "python-levenshtein>=0.27.1",
+    "qwen-vl-utils>=0.0.11",
+    "ruff>=0.12.1",
+    "scikit-learn>=1.7.0",
+    "streamlit>=1.46.1",
+    "tempenv>=2.1.0",
+    "torchcodec==0.2",
+    "tqdm>=4.67.1",
+    "transformers==4.55.0",
+    "trl>=0.20.0",
+    "vllm>=0.10.1",
+    "wandb>=0.20.1",
+]
+
+[project.optional-dependencies]
+build = ["setuptools", "packaging"]
+compile = ["flash-attn==2.7.4.post1"]
+
+[tool.uv]
+no-build-isolation-package = ["flash-attn"]
